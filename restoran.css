@@ -2,15 +2,9 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
 }
 
-#container {
-    display: flex;
-    height: 100%;
-    flex-grow: 1;
-}
+
 
 header > h1 {
     color: white;
@@ -43,9 +37,9 @@ header > .image-container a img {
     width: 30px;
     background-color: transparent;
 }
-
-
-
+.leftblock{
+    float: left;
+}
 .verticaltext {
     writing-mode: vertical-rl;
     text-orientation: sideways;
@@ -54,24 +48,20 @@ header > .image-container a img {
     letter-spacing: 3px;
     text-align: center;
     margin: auto;
-    padding: 100px 10px;
+    padding: 100px 20px;
 }
-#together{
+
+#together {
     font-size: 25px;
 }
 
 .content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 85%;
-    margin-left: 5%;
-    gap: 20px;
+    grid-template-columns: auto auto;
+    gap: 30px;
     justify-content: center;
-    margin-top: 50px;
-    float: right;
-    box-sizing: border-box;
+    margin: 20px auto;
 }
-
 .box {
     width: 100%;
     text-align: center;
@@ -103,10 +93,47 @@ a {
     box-sizing: border-box;
     box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.2);
 }
-footer{
+
+footer {
     padding: 10px;
     background-color: #222222;
     color: white;
     text-align: center;
 }
+    .box {
+        margin-bottom: 20px;
+    }
+.content2 {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+.box2 {
+    width: 100%;
+    text-align: center;
+}
 
+.box2 > a img,
+.box2 > img {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.undertext2 {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    margin-top: -2px;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.2);
+}
